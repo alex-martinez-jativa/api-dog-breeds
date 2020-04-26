@@ -1,7 +1,7 @@
 {
   "name": "api-breed-dogs",
   "version": "1.0.0",
-  "description": "",
+  "description": "API about dog breeds",
   "main": "index.js",
   "scripts": {
     "start": "node ./index.js",
@@ -9,7 +9,7 @@
     "test": "npx mocha logic",
     "test:coverage": "npx nyc --reporter=html --reporter=text mocha logic/**/*.spec.js"
   },
-  "keywords": [],
+  "keywords": ["API", "nodejs", "dogs", "breeds"],
   "author": "",
   "license": "ISC",
   "dependencies": {

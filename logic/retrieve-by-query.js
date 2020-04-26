@@ -24,7 +24,8 @@ module.exports = (filter) => {
                 {breedName: regex},
                 {description: regex},
                 {dogInfo: {height: regex}},
-                {dogInfo: {weight: regex}}
+                {dogInfo: {weight: regex}},
+                {dogInfo: {life: regex}}
             ]
         
         }).lean()
