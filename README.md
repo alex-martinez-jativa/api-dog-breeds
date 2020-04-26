@@ -71,7 +71,7 @@ https://api-dog-breeds.herokuapp.com/api/dogs
 
 https://api-dog-breeds.herokuapp.com/api/dog/5ea2ffe312007ad550f1ceec
 
-https://api-dog-breeds.herokuapp.com/api/search/american
+https://api-dog-breeds.herokuapp.com/api/search?q=american
 ```
 
 ### Author
