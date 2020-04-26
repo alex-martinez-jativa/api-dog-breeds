@@ -18,16 +18,15 @@ module.exports = (filter) => {
     let regex = new RegExp(query, 'i')
 
     return (async() =>{
-
+        debugger
         const results = await Dog.find({
             $or:[ 
                 {breedName: regex},
                 {description: regex},
-                {dogInfo: {height: regex}},
-                {dogInfo: {weight: regex}},
-                {dogInfo: {life: regex}}
+                {'dogInfo.height': regex},
+                {'dogInfo.weight': regex},
+                {'dogInfo.life': regex}
             ]
-        
         }).lean()
         if(results.length === 0) throw new NotFoundError(`there are not results with the query: ${query}`)
 
