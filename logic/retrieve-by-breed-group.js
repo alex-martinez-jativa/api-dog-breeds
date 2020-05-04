@@ -42,7 +42,7 @@ module.exports = (breedGroup) => {
 
     return (async() => {
 
-        const results = await Dog.find({'dogInfo.breedGroup': breedGroup})
+        const results = await Dog.find({'dogInfo.breedGroup': breedGroup}).lean()
         if(results.length === 0) throw new NotFoundError(`breed group ${breedGroup} does not exist`)
 
         results.forEach(dog => {
