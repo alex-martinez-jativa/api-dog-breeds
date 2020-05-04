@@ -6,7 +6,7 @@
     const data = new DOMParser().parseFromString(html, 'text/html')
     
     const dogs = data.querySelectorAll('.list-item')
-    let id = 1
+  
     const results = []
 
     for(const dog of dogs) {
@@ -15,8 +15,7 @@
 
         const image = dog.querySelector('.list-item-breed-img').src
         const name = dog.querySelector('.list-item-title').innerText
-        id++
-        element.id = id.toString()
+        
         element.breedName = name.toLowerCase()
         element.image = image
         const dogName = setName(name)
@@ -53,12 +52,12 @@
         breed[2] = breed[2].replace('Group:', '')
         breed = breed.join(' ')
 
-        element.dogInfo = [
-            {height: height.trim().toLowerCase()},
-            {weight: weight.trim().toLowerCase()},
-            {life: life.trim().toLowerCase()},
-            {breedGroup: breed.trim().toLowerCase()}
-        ]
+        element.dogInfo = {
+            height: height.trim().toLowerCase(),
+            weight: weight.trim().toLowerCase(),
+            life: life.trim().toLowerCase(),
+            breedGroup: breed.trim().toLowerCase()
+        }
 
         
     results.push(element) 

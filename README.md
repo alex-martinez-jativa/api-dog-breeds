@@ -40,26 +40,20 @@
 ## JSON response format
 
 ```json
-{
-  "breedName": "spanish mastiff",
-  "image": "https://cdn1-www.dogtime.com/assets/uploads/2020/01/spanish-mastiff-dog-breed-pictures-cover-650x368.jpg",
-  "description": "The Spanish Mastiff is a purebred working dog with an old history of serving as a guardians for sheep and livestock. Protective, loving, and calm, these gentle giants have become popular guard dogs and family pets alike.",
-  "dogInfo": [
-    {
-      "height": "26 to 35 inches"
-    },
-    {
-      "weight": "140 to 220 pounds"
-    },
-    {
-      "life": "10 to 12 years"
-    },
-    {
+[
+  {
+    "breedName": "spanish mastiff",
+    "image": "https://cdn1-www.dogtime.com/assets/uploads/2020/01/spanish-mastiff-dog-breed-pictures-cover-650x368.jpg",
+    "description": "The Spanish Mastiff is a purebred working dog with an old history of serving as a guardians for sheep and livestock. Protective, loving, and calm, these gentle giants have become popular guard dogs and family pets alike.",
+    "dogInfo": {
+      "height": "26 to 35 inches",
+      "weight": "140 to 220 pounds",
+      "life": "10 to 12 years",
       "breedGroup": "working dogs"
-    }
-  ],
-  "id": "5ea2ffe312007ad550f1ceec"
-}
+    },
+    "id": "5eaff43af96b5978ca726e16"
+  }
+]
 ```
 
 ## Request examples
