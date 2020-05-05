@@ -68,5 +68,10 @@ https://api-dog-breeds.herokuapp.com/api/dog/5ea2ffe312007ad550f1ceec
 https://api-dog-breeds.herokuapp.com/api/search?q=american
 ```
 
+<p>If you want to try Graphql service, go here:</p>
+<a href="https://github.com/alex-martinez-jativa/graphql-api-dog-breeds">
+https://github.com/alex-martinez-jativa/graphql-api-dog-breeds
+</a>
+
 ### Author
 <p>Alex Martínez Játiva</p>
