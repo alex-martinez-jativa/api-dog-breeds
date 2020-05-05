@@ -44,7 +44,7 @@ module.exports = (breedGroup) => {
 
         const results = await Dog.find({'dogInfo.breedGroup': breedGroup}).lean()
         if(results.length === 0) throw new NotFoundError(`breed group ${breedGroup} does not exist`)
-        debugger
+        
         results.forEach(dog => {
             dog.id = dog._id.toString()
             delete dog._id
